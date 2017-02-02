@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="http://rapidapi.com">
+    <img src="https://storage.googleapis.com/rapidapi-temp/background.png" width=350 />
+  </a>
+</p>
+
 # Google Maps Distance Matrix
 Provides travel distance and time for a matrix of origins and destinations.
 * Domain: google.com

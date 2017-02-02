@@ -1,4 +1,4 @@
-<p align="center">
+<p align="left">
   <a href="http://rapidapi.com">
     <img src="https://storage.googleapis.com/rapidapi-temp/background.png"/>
   </a>

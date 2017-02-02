@@ -1,6 +1,6 @@
 <p align="center">
   <a href="http://rapidapi.com">
-    <img src="https://storage.googleapis.com/rapidapi-temp/background.png" width=350 />
+    <img src="https://storage.googleapis.com/rapidapi-temp/background.png"/>
   </a>
 </p>
 

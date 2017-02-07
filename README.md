@@ -66,8 +66,8 @@ Requests distance calculation via public transit routes (where available).
 | origins                   | String     | The starting point for calculating travel distance and time. You can supply one or more locations separated by the pipe character, in the form of an address, latitude/longitude coordinates, or a place ID
 | destinations              | String     | One or more locations to use as the finishing point for calculating travel distance and time. The options for the destinations parameter are the same as for the origins parameter, described above
 | language                  | String     | The language in which to return results. List of supported languages: https://developers.google.com/maps/faq#languagesupport
-| units                     | String     | Specifies the unit system to use when expressing distance as text. Possible values are: metric | imperial
+| units                     | String     | Specifies the unit system to use when expressing distance as text. Possible values are: metric or imperial
 | transitMode              | String     | Specifies one or more preferred modes of transit. Possible values are: bus or subway or train or tram or rail (indicates that the calculated route should prefer travel by train, tram, light rail, and subway. This is equivalent to `transit_mode=train or transit_mode=tram or transit_mode=subway`)
-| transitRoutingPreference| String     | Specifies preferences for transit requests. Possible values are: less_walking | fewer_transfers
+| transitRoutingPreference| String     | Specifies preferences for transit requests. Possible values are: less_walking or fewer_transfers
 | timeRestriction          | String     | Specifies the desired time of departure or arrival (but not both). You can specify the time as an integer in seconds since midnight, January 1, 1970 UTC. `Possible values are: departure_time=12345 or arrival_time=12345`
 

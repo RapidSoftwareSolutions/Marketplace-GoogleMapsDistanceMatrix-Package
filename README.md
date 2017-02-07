@@ -38,7 +38,7 @@ Requests distance calculation for walking via pedestrian paths & sidewalks (wher
 | Field       | Type       | Description
 |-------------|------------|----------
 | apiKey      | credentials| The api key obtained from Google Developers Console.
-| origins     | String     | The starting point for calculating travel distance and time. You can supply one or more locations separated by the pipe character (|), in the form of an address, latitude/longitude coordinates, or a place ID
+| origins     | String     | The starting point for calculating travel distance and time. You can supply one or more locations separated by the pipe character (`|`), in the form of an address, latitude/longitude coordinates, or a place ID
 | destinations| String     | One or more locations to use as the finishing point for calculating travel distance and time. The options for the destinations parameter are the same as for the origins parameter, described above
 | language    | String     | The language in which to return results. List of supported languages: https://developers.google.com/maps/faq#languagesupport
 | units       | String     |  Specifies the unit system to use when expressing distance as text. Possible values are: metric or imperial

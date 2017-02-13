@@ -36,8 +36,9 @@
           "required": false
         }, {
           "name": "units",
-          "type": "String",
+          "type": "Select",
           "info": " Specifies the unit system to use when expressing distance as text. Possible values are: metric | imperial",
+          "options": ["metric", "imperial"],
           "required" : false
         }
       ],
@@ -74,8 +75,9 @@
           "required": false
         }, {
           "name": "units",
-          "type": "String",
+          "type": "Select",
           "info": " Specifies the unit system to use when expressing distance as text. Possible values are: metric | imperial",
+          "options": ["metric", "imperial"],
           "required" : false
         }
       ],
@@ -112,13 +114,15 @@
           "required": false
         }, {
           "name": "units",
-          "type": "String",
+          "type": "Select",
           "info": "Specifies the unit system to use when expressing distance as text. Possible values are: metric | imperial",
+          "options": ["metric", "imperial"],
           "required" : false
         }, {
           "name": "avoid",
-          "type": "String",
+          "type": "Select",
           "info": "Introduces restrictions to the route. Possible values: tolls | highways | ferries | indoor",
+          "options": ["tolls", "highways", "ferries", "indoor"],
           "required" : false
         }, {
           "name": "departureTime",
@@ -157,6 +161,7 @@
           "name": "destinations",
           "type": "String",
           "info": "One or more locations to use as the finishing point for calculating travel distance and time. The options for the destinations parameter are the same as for the origins parameter, described above",
+
           "required": true
         }, {
           "name": "language",
@@ -165,23 +170,27 @@
           "required": false
         }, {
           "name" : "units",
-          "type": "String",
+          "type": "Select",
           "info": "Specifies the unit system to use when expressing distance as text. Possible values are: metric | imperial",
+          "options": ["metric", "imperial"],
           "required" : false
         }, {
           "name" : "transitMode",
-          "type": "String",
+          "type": "Select",
           "info": "Specifies one or more preferred modes of transit. Possible values are: bus | subway | train | tram | rail (indicates that the calculated route should prefer travel by train, tram, light rail, and subway. This is equivalent to transit_mode=train|tram|subway)",
+          "options": ["bus", "subway", "train", "tram", "rail"],
           "required" : false
         }, {
           "name": "transitRoutingPreference",
-          "type": "String",
+          "type": "Select",
           "info": "Specifies preferences for transit requests. Possible values are: less_walking | fewer_transfers",
+          "options": ["less_walking", "fewer_transfers"],
           "required" : false
         }, {
           "name": "timeRestriction",
-          "type": "String",
+          "type": "Select",
           "info": "Specifies the desired time of departure or arrival (but not both). You can specify the time as an integer in seconds since midnight, January 1, 1970 UTC. Possible values are: departure_time=12345 | arrival_time=12345",
+          "options": ["departure_time=12345", "arrival_time=12345"],
           "required" : false
         }
       ],

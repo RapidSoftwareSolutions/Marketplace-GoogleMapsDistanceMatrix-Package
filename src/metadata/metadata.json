@@ -103,7 +103,7 @@
         }, {
           "name": "destinations",
           "type": "String",
-          "info": "One or more locations to use as the finishing point for calculating travel distance and time. The options for the destinations parameter are the same as for the origins parameter, described above",
+          "info": "One or more locations to use as the finishing point for calculating travel distance and time. The options ƒfor the destinations parameter are the same as for the origins parameter, described above",
           "required": true
         }, {
           "name": "language",

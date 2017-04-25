@@ -1,5 +1,5 @@
 <p align="left">
-  <a href="http://rapidapi.com">
+  <a href="https://rapidapi.com/package/GoogleMapsDistanceMatrix/functions?utm_source=RapidAPIGitHub_GoogleMapsDistanceFunctions&utm_medium=button&utm_content=RapidAPI_GitHub">
     <img src="https://storage.googleapis.com/rapidapi-temp/background.png"/>
   </a>
 </p>

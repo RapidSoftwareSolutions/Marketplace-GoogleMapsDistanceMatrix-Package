@@ -36,7 +36,8 @@
           "required": false
         }, {
           "name": "units",
-          "type": "String",
+          "type": "Select",
+          "options": ["metric", "imperial"],
           "info": " Specifies the unit system to use when expressing distance as text. Possible values are: metric | imperial",
           "required" : false
         }
@@ -74,8 +75,9 @@
           "required": false
         }, {
           "name": "units",
-          "type": "String",
-          "info": " Specifies the unit system to use when expressing distance as text. Possible values are: metric | imperial",
+          "type": "Select",
+          "options": ["metric", "imperial"],
+          "info": "Specifies the unit system to use when expressing distance as text. Possible values are: metric | imperial",
           "required" : false
         }
       ],
@@ -112,7 +114,8 @@
           "required": false
         }, {
           "name": "units",
-          "type": "String",
+          "type": "Select",
+          "options": ["metric", "imperial"],
           "info": "Specifies the unit system to use when expressing distance as text. Possible values are: metric | imperial",
           "required" : false
         }, {
@@ -165,7 +168,8 @@
           "required": false
         }, {
           "name" : "units",
-          "type": "String",
+          "type": "Select",
+          "options": ["metric", "imperial"],
           "info": "Specifies the unit system to use when expressing distance as text. Possible values are: metric | imperial",
           "required" : false
         }, {

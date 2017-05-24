@@ -120,17 +120,19 @@
           "required" : false
         }, {
           "name": "avoid",
-          "type": "String",
+          "type": "Select",
+          "options": ["tolls", "highways", "ferries", "indoor"],
           "info": "Introduces restrictions to the route. Possible values: tolls | highways | ferries | indoor",
           "required" : false
         }, {
           "name": "departureTime",
-          "type": "String",
+          "type": "DatePicker",
           "info": "The desired time of departure. You can specify the time as an integer in seconds since midnight, January 1, 1970 UTC. Alternatively, you can specify a value of now, which sets the departure time to the current time (correct to the nearest second).",
           "required" : false
         }, {
           "name": "trafficModel",
-          "type": "String",
+          "type": "Select",
+          "options": ["best_guess", "pessimistic", "optimistic"],
           "info": "Specifies the assumptions to use when calculating time in traffic. The traffic_model parameter may only be specified for requests where the request includes a departure_time. Possible values: best_guess | pessimistic | optimistic",
           "required" : false
         }
@@ -174,12 +176,14 @@
           "required" : false
         }, {
           "name" : "transitMode",
-          "type": "String",
+          "type": "Select",
+          "options": ["bus", "subway", "train", "tram", "rail"],
           "info": "Specifies one or more preferred modes of transit. Possible values are: bus | subway | train | tram | rail (indicates that the calculated route should prefer travel by train, tram, light rail, and subway. This is equivalent to transit_mode=train|tram|subway)",
           "required" : false
         }, {
           "name": "transitRoutingPreference",
-          "type": "String",
+          "type": "Select",
+          "options": ["less_walking", "fewer_transfers"],
           "info": "Specifies preferences for transit requests. Possible values are: less_walking | fewer_transfers",
           "required" : false
         }, {

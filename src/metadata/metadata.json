@@ -4,10 +4,26 @@
   "description": "Provides travel distance and time for a matrix of origins and destinations.",
   "image": "http:\/\/logo.clearbit.com\/google.com",
   "repo": "https:\/\/github.com\/RapidSoftwareSolutions\/Marketplace-GoogleMapsDistanceMatrix-package",
-  "keywords": ["API", "Google", "geo", "geography", "geolocal", "geotarget", "geotargeted", "local", "location", "maps", "marketing", "places", "recommendations"],
+  "keywords": [
+    "API",
+    "Google",
+    "geo",
+    "geography",
+    "geolocal",
+    "geotarget",
+    "geotargeted",
+    "local",
+    "location",
+    "maps",
+    "marketing",
+    "places",
+    "recommendations"
+  ],
   "accounts": {
     "domain": "google.com",
-    "credentials": ["apiKey"]
+    "credentials": [
+      "apiKey"
+    ]
   },
   "blocks": [
     {
@@ -19,37 +35,58 @@
           "type": "credentials",
           "info": "The api key obtained from Google Developers Console.",
           "required": true
-        }, {
+        },
+        {
           "name": "origins",
-          "type": "String",
-          "info": "The starting point for calculating travel distance and time. You can supply one or more locations separated by the pipe character (|), in the form of an address, latitude/longitude coordinates, or a place ID",
+          "type": "List",
+          "structure": {
+            "name": "origin",
+            "type": "String",
+            "info": "Origin"
+          },
+          "info": "The starting point for calculating travel distance and time. You can supply one or more locations as array, in the form of an address, latitude/longitude coordinates, or a place ID",
           "required": true
-        }, {
+        },
+        {
           "name": "destinations",
-          "type": "String",
+          "type": "List",
+          "structure": {
+            "name": "destination",
+            "type": "String",
+            "info": "Destination"
+          },
           "info": "One or more locations to use as the finishing point for calculating travel distance and time. The options for the destinations parameter are the same as for the origins parameter, described above",
           "required": true
-        }, {
+        },
+        {
           "name": "language",
           "type": "String",
           "info": "The language in which to return results. List of supported languages: https://developers.google.com/maps/faq#languagesupport",
           "required": false
-        }, {
+        },
+        {
           "name": "units",
           "type": "Select",
-          "options": ["metric", "imperial"],
+          "options": [
+            "metric",
+            "imperial"
+          ],
           "info": " Specifies the unit system to use when expressing distance as text. Possible values are: metric | imperial",
-          "required" : false
+          "required": false
         }
       ],
-      "callbacks":[{
-        "name": "error",
-        "info": "error"
-      }, {
-        "name": "success",
-        "info": "success"
-      }]
-    }, {
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "error"
+        },
+        {
+          "name": "success",
+          "info": "success"
+        }
+      ]
+    },
+    {
       "name": "getWalkingDistanceMatrix",
       "description": "Requests distance calculation for walking via pedestrian paths & sidewalks (where available).",
       "args": [
@@ -58,37 +95,58 @@
           "type": "credentials",
           "info": "The api key obtained from Google Developers Console.",
           "required": true
-        }, {
+        },
+        {
           "name": "origins",
-          "type": "String",
-          "info": "The starting point for calculating travel distance and time. You can supply one or more locations separated by the pipe character (|), in the form of an address, latitude/longitude coordinates, or a place ID",
+          "type": "List",
+          "structure": {
+            "name": "origin",
+            "type": "String",
+            "info": "Origin"
+          },
+          "info": "The starting point for calculating travel distance and time. You can supply one or more locations as array, in the form of an address, latitude/longitude coordinates, or a place ID",
           "required": true
-        }, {
+        },
+        {
           "name": "destinations",
-          "type": "String",
+          "type": "List",
+          "structure": {
+            "name": "destination",
+            "type": "String",
+            "info": "Destination"
+          },
           "info": "One or more locations to use as the finishing point for calculating travel distance and time. The options for the destinations parameter are the same as for the origins parameter, described above",
           "required": true
-        }, {
+        },
+        {
           "name": "language",
           "type": "String",
           "info": "The language in which to return results. List of supported languages: https://developers.google.com/maps/faq#languagesupport",
           "required": false
-        }, {
+        },
+        {
           "name": "units",
           "type": "Select",
-          "options": ["metric", "imperial"],
+          "options": [
+            "metric",
+            "imperial"
+          ],
           "info": "Specifies the unit system to use when expressing distance as text. Possible values are: metric | imperial",
-          "required" : false
+          "required": false
         }
       ],
-      "callbacks":[{
-        "name": "error",
-        "info": "error"
-      }, {
-        "name": "success",
-        "info": "success"
-      }]
-    }, {
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "error"
+        },
+        {
+          "name": "success",
+          "info": "success"
+        }
+      ]
+    },
+    {
       "name": "getDrivingDistanceMatrix",
       "description": "Indicates distance calculation using the road network.",
       "args": [
@@ -97,54 +155,87 @@
           "type": "credentials",
           "info": "The api key obtained from Google Developers Console.",
           "required": true
-        }, {
+        },
+        {
           "name": "origins",
-          "type": "String",
-          "info": "The starting point for calculating travel distance and time. You can supply one or more locations separated by the pipe character (|), in the form of an address, latitude/longitude coordinates, or a place ID",
+          "type": "List",
+          "structure": {
+            "name": "origin",
+            "type": "String",
+            "info": "Origin"
+          },
+          "info": "The starting point for calculating travel distance and time. You can supply one or more locations as array, in the form of an address, latitude/longitude coordinates, or a place ID",
           "required": true
-        }, {
+        },
+        {
           "name": "destinations",
-          "type": "String",
-          "info": "One or more locations to use as the finishing point for calculating travel distance and time. The options ƒfor the destinations parameter are the same as for the origins parameter, described above",
+          "type": "List",
+          "structure": {
+            "name": "destination",
+            "type": "String",
+            "info": "Destination"
+          },
+          "info": "One or more locations to use as the finishing point for calculating travel distance and time. The options for the destinations parameter are the same as for the origins parameter, described above",
           "required": true
-        }, {
+        },
+        {
           "name": "language",
           "type": "String",
           "info": "The language in which to return results. List of supported languages: https://developers.google.com/maps/faq#languagesupport",
           "required": false
-        }, {
+        },
+        {
           "name": "units",
           "type": "Select",
-          "options": ["metric", "imperial"],
+          "options": [
+            "metric",
+            "imperial"
+          ],
           "info": "Specifies the unit system to use when expressing distance as text. Possible values are: metric | imperial",
-          "required" : false
-        }, {
+          "required": false
+        },
+        {
           "name": "avoid",
           "type": "Select",
-          "options": ["tolls", "highways", "ferries", "indoor"],
+          "options": [
+            "tolls",
+            "highways",
+            "ferries",
+            "indoor"
+          ],
           "info": "Introduces restrictions to the route. Possible values: tolls | highways | ferries | indoor",
-          "required" : false
-        }, {
+          "required": false
+        },
+        {
           "name": "departureTime",
           "type": "DatePicker",
           "info": "The desired time of departure. You can specify the time as an integer in seconds since midnight, January 1, 1970 UTC. Alternatively, you can specify a value of now, which sets the departure time to the current time (correct to the nearest second).",
-          "required" : false
-        }, {
+          "required": false
+        },
+        {
           "name": "trafficModel",
           "type": "Select",
-          "options": ["best_guess", "pessimistic", "optimistic"],
+          "options": [
+            "best_guess",
+            "pessimistic",
+            "optimistic"
+          ],
           "info": "Specifies the assumptions to use when calculating time in traffic. The traffic_model parameter may only be specified for requests where the request includes a departure_time. Possible values: best_guess | pessimistic | optimistic",
-          "required" : false
+          "required": false
         }
       ],
-      "callbacks":[{
-        "name": "error",
-        "info": "error"
-      }, {
-        "name": "success",
-        "info": "success"
-      }]
-    }, {
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "error"
+        },
+        {
+          "name": "success",
+          "info": "success"
+        }
+      ]
+    },
+    {
       "name": "getTransitDistanceMatrix",
       "description": "Requests distance calculation via public transit routes (where available).",
       "args": [
@@ -153,53 +244,85 @@
           "type": "credentials",
           "info": "The api key obtained from Google Developers Console.",
           "required": true
-        }, {
+        },
+        {
           "name": "origins",
-          "type": "String",
-          "info": "The starting point for calculating travel distance and time. You can supply one or more locations separated by the pipe character (|), in the form of an address, latitude/longitude coordinates, or a place ID",
+          "type": "List",
+          "structure": {
+            "name": "origin",
+            "type": "String",
+            "info": "Origin"
+          },
+          "info": "The starting point for calculating travel distance and time. You can supply one or more locations as array, in the form of an address, latitude/longitude coordinates, or a place ID",
           "required": true
-        }, {
+        },
+        {
           "name": "destinations",
-          "type": "String",
+          "type": "List",
+          "structure": {
+            "name": "destination",
+            "type": "String",
+            "info": "Destination"
+          },
           "info": "One or more locations to use as the finishing point for calculating travel distance and time. The options for the destinations parameter are the same as for the origins parameter, described above",
           "required": true
-        }, {
+        },
+        {
           "name": "language",
           "type": "String",
           "info": "The language in which to return results. List of supported languages: https://developers.google.com/maps/faq#languagesupport",
           "required": false
-        }, {
-          "name" : "units",
+        },
+        {
+          "name": "units",
           "type": "Select",
-          "options": ["metric", "imperial"],
+          "options": [
+            "metric",
+            "imperial"
+          ],
           "info": "Specifies the unit system to use when expressing distance as text. Possible values are: metric | imperial",
-          "required" : false
-        }, {
-          "name" : "transitMode",
+          "required": false
+        },
+        {
+          "name": "transitMode",
           "type": "Select",
-          "options": ["bus", "subway", "train", "tram", "rail"],
+          "options": [
+            "bus",
+            "subway",
+            "train",
+            "tram",
+            "rail"
+          ],
           "info": "Specifies one or more preferred modes of transit. Possible values are: bus | subway | train | tram | rail (indicates that the calculated route should prefer travel by train, tram, light rail, and subway. This is equivalent to transit_mode=train|tram|subway)",
-          "required" : false
-        }, {
+          "required": false
+        },
+        {
           "name": "transitRoutingPreference",
           "type": "Select",
-          "options": ["less_walking", "fewer_transfers"],
+          "options": [
+            "less_walking",
+            "fewer_transfers"
+          ],
           "info": "Specifies preferences for transit requests. Possible values are: less_walking | fewer_transfers",
-          "required" : false
-        }, {
+          "required": false
+        },
+        {
           "name": "timeRestriction",
           "type": "String",
           "info": "Specifies the desired time of departure or arrival (but not both). You can specify the time as an integer in seconds since midnight, January 1, 1970 UTC. Possible values are: departure_time=12345 | arrival_time=12345",
-          "required" : false
+          "required": false
         }
       ],
-      "callbacks":[{
-        "name": "error",
-        "info": "error"
-      }, {
-        "name": "success",
-        "info": "success"
-      }]
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "error"
+        },
+        {
+          "name": "success",
+          "info": "success"
+        }
+      ]
     }
   ]
 }

@@ -14,8 +14,8 @@ $app->post('/api/GoogleMapsDistanceMatrix/getDrivingDistanceMatrix', function ($
     //forming request to vendor API
     $query['key'] = $post_data['args']['apiKey'];
     $query['mode'] = 'driving';
-    $query['origins'] = $post_data['args']['origins'];
-    $query['destinations'] = $post_data['args']['destinations'];
+    $query['origins'] = implode('|',$post_data['args']['origins']);
+    $query['destinations'] = implode('|',$post_data['args']['destinations']);
     if (!empty($post_data['args']['language']) && strlen($post_data['args']['language']) > 0) {
         $query['language'] = $post_data['args']['language'];
     };

@@ -14,8 +14,8 @@ $app->post('/api/GoogleMapsDistanceMatrix/getTransitDistanceMatrix', function($r
     //forming request to vendor API
     $query['key'] = $post_data['args']['apiKey'];
     $query['mode'] = 'transit';
-    $query['origins'] = $post_data['args']['origins'];
-    $query['destinations'] = $post_data['args']['destinations'];
+    $query['origins'] = implode('|',$post_data['args']['origins']);
+    $query['destinations'] = implode('|',$post_data['args']['destinations']);
 
     if(!empty($post_data['args']['language'])) {
         $query['language'] = $post_data['args']['language'];

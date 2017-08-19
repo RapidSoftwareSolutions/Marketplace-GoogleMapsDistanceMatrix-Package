@@ -60,7 +60,12 @@
         },
         {
           "name": "language",
-          "type": "String",
+          "type": "Select",
+          "options":["Arabic","Basque","Bengali","Bulgarian","Catalan","Chinese (Simplified)","Chinese (Traditional)"
+          ,"Croatian","Czech","Danish","Dutch","English (UK)","Filipino","Finnish","French","Galician","German",
+            "Greek","Gujarati","Hebrew","Hindi","Hungarian","Indonesian","Italian","Japanese","Kannada","Korean","Latvian","Lithuanian",
+            "Malayalam","Marathi","Polish","Portuguese (Brazil)","Portuguese (Portugal)","Romanian","Russian","Serbian","Slovak","Slovenian"
+          ,   "Spanish","Swedish","Tamil","Telugu","Thai","Turkish","Ukrainian","Vietnamese","Tagalog","Portuguese","Norwegian","English","Farsi"],
           "info": "The language in which to return results. List of supported languages: https://developers.google.com/maps/faq#languagesupport",
           "required": false
         },
@@ -120,7 +125,12 @@
         },
         {
           "name": "language",
-          "type": "String",
+          "type": "Select",
+          "options":["Arabic","Basque","Bengali","Bulgarian","Catalan","Chinese (Simplified)","Chinese (Traditional)"
+          ,"Croatian","Czech","Danish","Dutch","English (UK)","Filipino","Finnish","French","Galician","German",
+            "Greek","Gujarati","Hebrew","Hindi","Hungarian","Indonesian","Italian","Japanese","Kannada","Korean","Latvian","Lithuanian",
+            "Malayalam","Marathi","Polish","Portuguese (Brazil)","Portuguese (Portugal)","Romanian","Russian","Serbian","Slovak","Slovenian"
+          ,   "Spanish","Swedish","Tamil","Telugu","Thai","Turkish","Ukrainian","Vietnamese","Tagalog","Portuguese","Norwegian","English","Farsi"],
           "info": "The language in which to return results. List of supported languages: https://developers.google.com/maps/faq#languagesupport",
           "required": false
         },
@@ -180,7 +190,12 @@
         },
         {
           "name": "language",
-          "type": "String",
+          "type": "Select",
+          "options":["Arabic","Basque","Bengali","Bulgarian","Catalan","Chinese (Simplified)","Chinese (Traditional)"
+          ,"Croatian","Czech","Danish","Dutch","English (UK)","Filipino","Finnish","French","Galician","German",
+            "Greek","Gujarati","Hebrew","Hindi","Hungarian","Indonesian","Italian","Japanese","Kannada","Korean","Latvian","Lithuanian",
+            "Malayalam","Marathi","Polish","Portuguese (Brazil)","Portuguese (Portugal)","Romanian","Russian","Serbian","Slovak","Slovenian"
+          ,   "Spanish","Swedish","Tamil","Telugu","Thai","Turkish","Ukrainian","Vietnamese","Tagalog","Portuguese","Norwegian","English","Farsi"],
           "info": "The language in which to return results. List of supported languages: https://developers.google.com/maps/faq#languagesupport",
           "required": false
         },
@@ -269,7 +284,12 @@
         },
         {
           "name": "language",
-          "type": "String",
+          "type": "Select",
+          "options":["Arabic","Basque","Bengali","Bulgarian","Catalan","Chinese (Simplified)","Chinese (Traditional)"
+          ,"Croatian","Czech","Danish","Dutch","English (UK)","Filipino","Finnish","French","Galician","German",
+            "Greek","Gujarati","Hebrew","Hindi","Hungarian","Indonesian","Italian","Japanese","Kannada","Korean","Latvian","Lithuanian",
+            "Malayalam","Marathi","Polish","Portuguese (Brazil)","Portuguese (Portugal)","Romanian","Russian","Serbian","Slovak","Slovenian"
+          ,   "Spanish","Swedish","Tamil","Telugu","Thai","Turkish","Ukrainian","Vietnamese","Tagalog","Portuguese","Norwegian","English","Farsi"],
           "info": "The language in which to return results. List of supported languages: https://developers.google.com/maps/faq#languagesupport",
           "required": false
         },

@@ -1,5 +1,74 @@
 <?php
 $app->post('/api/GoogleMapsDistanceMatrix/getWalkingDistanceMatrix', function($request, $response, $args){
+
+    $languageArr = [
+        "Afrikaans" => "af",
+        "Amharic" => "am",
+        "Arabic" => "ar",
+        "Basque" => "eu",
+        "Bengali" => "bn",
+        "Bulgarian" => "bg",
+        "Catalan" => "ca",
+        "Chinese (Hong Kong)" => "zh-HK",
+        "Chinese (Simplified)" => "zh-CN",
+        "Chinese (Traditional)" => "Chinese (Traditional)",
+        "Croatian" => "hr",
+        "Czech" => "cs",
+        "Danish" => "da",
+        "Dutch" => "nl",
+        "English (UK)" => "en-GB",
+        "English (US)" => "	en-US",
+        "Estonian" => "et",
+        "Filipino" => "fil",
+        "Finnish" => "fi",
+        "French" => "fr",
+        "French (Canadian)" => "fr-CA",
+        "Galician" => "","gl",
+        "German" => "de",
+        "Greek" => "el",
+        "Gujarati" => "gu",
+        "Hebrew" => "iw",
+        "Hindi" => "hi" ,
+        "Hungarian" => "hu",
+        "Icelandic" => "is",
+        "Indonesian" => "id",
+        "Italian" => "it",
+        "Japanese" => "ja",
+        "Kannada" => "kn",
+        "Korean" => "ko",
+        "Latvian" => "lv",
+        "Lithuanian" => "lt",
+        "Malay" => "ms",
+        "Malayalam" => "ml",
+        "Marathi" => "mr",
+        "Persian" => "fa",
+        "Polish" => "pl",
+        "Portuguese (Brazil)" => "pt-BR",
+        "Portuguese (Portugal)" => "pt-PT",
+        "Romanian" => "ro",
+        "Russian" => "ru",
+        "Serbian" => "sr",
+        "Slovak" => "sk",
+        "Slovenian" => "sl",
+        "Spanish" => "es",
+        "Spanish (Latin America)" => "es-419",
+        "Swahili" => "sw",
+        "Swedish" => "sv" ,
+        "Tamil" => "ta",
+        "Telugu" => "te",
+        "Thai" => "th",
+        "Turkish" => "tr",
+        "Ukrainian" => "uk",
+        "Urdu" => "ur",
+        "Vietnamese" => "vi",
+        "Zulu" => "zu",
+        "Tagalog" => "tl",
+        "Portuguese" => "pt",
+        "Norwegian" => "no",
+        "English" => "en",
+        "Farsi" => "fa"];
+
+
     $settings = $this->settings;
 
     //checking properly formed json
@@ -16,7 +85,7 @@ $app->post('/api/GoogleMapsDistanceMatrix/getWalkingDistanceMatrix', function($r
     $query['origins'] = implode('|',$post_data['args']['origins']);
     $query['destinations'] = implode('|',$post_data['args']['destinations']);
     if(!empty($post_data['args']['language'])) {
-        $query['language'] = $post_data['args']['language'];
+        $query['language'] = $languageArr[$post_data['args']['language']];
     };
     if(!empty($post_data['args']['units'])) {
         $query['units'] = $post_data['args']['units'];

@@ -66,7 +66,7 @@
             "Greek","Gujarati","Hebrew","Hindi","Hungarian","Indonesian","Italian","Japanese","Kannada","Korean","Latvian","Lithuanian",
             "Malayalam","Marathi","Polish","Portuguese (Brazil)","Portuguese (Portugal)","Romanian","Russian","Serbian","Slovak","Slovenian"
           ,   "Spanish","Swedish","Tamil","Telugu","Thai","Turkish","Ukrainian","Vietnamese","Tagalog","Portuguese","Norwegian","English","Farsi"],
-          "info": "The language in which to return results. List of supported languages: https://developers.google.com/maps/faq#languagesupport",
+          "info": "The language in which to return results.",
           "required": false
         },
         {
@@ -131,7 +131,7 @@
             "Greek","Gujarati","Hebrew","Hindi","Hungarian","Indonesian","Italian","Japanese","Kannada","Korean","Latvian","Lithuanian",
             "Malayalam","Marathi","Polish","Portuguese (Brazil)","Portuguese (Portugal)","Romanian","Russian","Serbian","Slovak","Slovenian"
           ,   "Spanish","Swedish","Tamil","Telugu","Thai","Turkish","Ukrainian","Vietnamese","Tagalog","Portuguese","Norwegian","English","Farsi"],
-          "info": "The language in which to return results. List of supported languages: https://developers.google.com/maps/faq#languagesupport",
+          "info": "The language in which to return results.",
           "required": false
         },
         {
@@ -196,7 +196,7 @@
             "Greek","Gujarati","Hebrew","Hindi","Hungarian","Indonesian","Italian","Japanese","Kannada","Korean","Latvian","Lithuanian",
             "Malayalam","Marathi","Polish","Portuguese (Brazil)","Portuguese (Portugal)","Romanian","Russian","Serbian","Slovak","Slovenian"
           ,   "Spanish","Swedish","Tamil","Telugu","Thai","Turkish","Ukrainian","Vietnamese","Tagalog","Portuguese","Norwegian","English","Farsi"],
-          "info": "The language in which to return results. List of supported languages: https://developers.google.com/maps/faq#languagesupport",
+          "info": "The language in which to return results.",
           "required": false
         },
         {
@@ -290,7 +290,7 @@
             "Greek","Gujarati","Hebrew","Hindi","Hungarian","Indonesian","Italian","Japanese","Kannada","Korean","Latvian","Lithuanian",
             "Malayalam","Marathi","Polish","Portuguese (Brazil)","Portuguese (Portugal)","Romanian","Russian","Serbian","Slovak","Slovenian"
           ,   "Spanish","Swedish","Tamil","Telugu","Thai","Turkish","Ukrainian","Vietnamese","Tagalog","Portuguese","Norwegian","English","Farsi"],
-          "info": "The language in which to return results. List of supported languages: https://developers.google.com/maps/faq#languagesupport",
+          "info": "The language in which to return results.",
           "required": false
         },
         {

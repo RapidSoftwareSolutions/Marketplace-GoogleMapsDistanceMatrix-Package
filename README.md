@@ -1,8 +1,5 @@
-<p align="left">
-  <a href="https://rapidapi.com/package/GoogleMapsDistanceMatrix/functions?utm_source=RapidAPIGitHub_GoogleMapsDistanceFunctions&utm_medium=button&utm_content=RapidAPI_GitHub">
-    <img src="https://storage.googleapis.com/rapidapi-temp/background.png"/>
-  </a>
-</p>
+[![](https://scdn.rapidapi.com/RapidAPI_banner.png)](https://rapidapi.com/package/GoogleMapsDistanceMatrix/functions?utm_source=RapidAPIGitHub_GoogleMapsDistanceMatrixFunctions&utm_medium=button&utm_content=RapidAPI_GitHub)
+
 
 # Google Maps Distance Matrix
 Provides travel distance and time for a matrix of origins and destinations.

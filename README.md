@@ -26,7 +26,7 @@ Requests distance calculation for bicycling via bicycle paths & preferred street
 | apiKey      | credentials| The api key obtained from Google Developers Console.
 | origins     | Array      | The starting point for calculating travel distance and time. You can supply one or more locations as array, in the form of an address, latitude/longitude coordinates, or a place ID
 | destinations| Array      | One or more locations to use as the finishing point for calculating travel distance and time. The options for the destinations parameter are the same as for the origins parameter, described above
-| language    | String     | The language in which to return results. List of supported languages: `https://developers.google.com/maps/faq#languagesupport`
+| language    | Select     | The language in which to return results. List of supported languages: `https://developers.google.com/maps/faq#languagesupport`
 | units       | String     |  Specifies the unit system to use when expressing distance as text. Possible values are: metric or imperial
 
 ## GoogleMapsDistanceMatrix.getWalkingDistanceMatrix
@@ -37,7 +37,7 @@ Requests distance calculation for walking via pedestrian paths & sidewalks (wher
 | apiKey      | credentials| The api key obtained from Google Developers Console.
 | origins     | Array      | The starting point for calculating travel distance and time. You can supply one or more locations as array, in the form of an address, latitude/longitude coordinates, or a place ID
 | destinations| Array      | One or more locations to use as the finishing point for calculating travel distance and time. The options for the destinations parameter are the same as for the origins parameter, described above
-| language    | String     | The language in which to return results. List of supported languages: https://developers.google.com/maps/faq#languagesupport
+| language    | Select     | The language in which to return results. List of supported languages: https://developers.google.com/maps/faq#languagesupport
 | units       | String     |  Specifies the unit system to use when expressing distance as text. Possible values are: metric or imperial
 
 ## GoogleMapsDistanceMatrix.getDrivingDistanceMatrix
@@ -48,7 +48,7 @@ Indicates distance calculation using the road network.
 | apiKey        | credentials| The api key obtained from Google Developers Console.
 | origins       | Array      | The starting point for calculating travel distance and time. You can supply one or more locations as array, in the form of an address, latitude/longitude coordinates, or a place ID
 | destinations  | Array      | One or more locations to use as the finishing point for calculating travel distance and time. The options for the destinations parameter are the same as for the origins parameter, described above
-| language      | String     | The language in which to return results. List of supported languages: https://developers.google.com/maps/faq#languagesupport
+| language      | Select     | The language in which to return results. List of supported languages: https://developers.google.com/maps/faq#languagesupport
 | units         | String     | Specifies the unit system to use when expressing distance as text. Possible values are: metric or imperial
 | avoid         | String     | Introduces restrictions to the route. Possible values: tolls or highways or ferries or indoor
 | departureTime| String     | The desired time of departure. You can specify the time as an integer in seconds since midnight, January 1, 1970 UTC. Alternatively, you can specify a value of now, which sets the departure time to the current time (correct to the nearest second).
@@ -62,7 +62,7 @@ Requests distance calculation via public transit routes (where available).
 | apiKey                    | credentials| The api key obtained from Google Developers Console.
 | origins                   | Array      | The starting point for calculating travel distance and time. You can supply one or more locations as array, in the form of an address, latitude/longitude coordinates, or a place ID
 | destinations              | Array      | One or more locations to use as the finishing point for calculating travel distance and time. The options for the destinations parameter are the same as for the origins parameter, described above
-| language                  | String     | The language in which to return results. List of supported languages: https://developers.google.com/maps/faq#languagesupport
+| language                  | Select    | The language in which to return results. List of supported languages: https://developers.google.com/maps/faq#languagesupport
 | units                     | String     | Specifies the unit system to use when expressing distance as text. Possible values are: metric or imperial
 | transitMode               | String     | Specifies one or more preferred modes of transit. Possible values are: bus or subway or train or tram or rail (indicates that the calculated route should prefer travel by train, tram, light rail, and subway. This is equivalent to `transit_mode=train or transit_mode=tram or transit_mode=subway`)
 | transitRoutingPreference  | String     | Specifies preferences for transit requests. Possible values are: less_walking or fewer_transfers
